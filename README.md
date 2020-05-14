@@ -38,7 +38,7 @@ More info coming.
 
 Check out these resources for help in deploying Jekyll sites, in general.
 
-- [Deploy Jekyll to Netlify](https://www.netlify.com/blog/2015/10/28/a-step-by-step-guide-jekyll-3.0-on-netlify/?ref=scottmathson)
+- [Deploy Jekyll to Netlify](https://www.netlify.com/blog/2015/10/28/a-step-by-step-guide-jekyll-3.0-on-netlify/?ref=scottmathson) (can skip directly to the ["Connecting to Netlify" section](https://www.netlify.com/blog/2015/10/28/a-step-by-step-guide-jekyll-3.0-on-netlify/?ref=scottmathson#connecting-to-netlify))
 - [Deploy Jekyll to GitHub Pages](https://jekyllrb.com/docs/github-pages/)
 
 Scott Mathson <https://scottmathson.com/> | [scottmathson on GitHub](https://github.com/scottmathson) | [scottmathson on Twitter](https://twitter.com/scottmathson), [Mathson Design, LLC](https://mathsondesignco.com/)
