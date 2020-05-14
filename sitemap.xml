@@ -1,0 +1,50 @@
+---
+layout: null
+sitemap:
+  exclude: 'yes'
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  {% for page in site.pages %}
+    {% if page.title %}
+      {% unless page.sitemap.exclude == "yes" %}
+        {% unless page.url contains '/assets/' %}
+          <url>
+            <loc>{{ site.url }}{{ page.url }}</loc>
+            {% if page.sitemap.lastmod %}
+              <lastmod>{{ page.sitemap.lastmod | date_to_xmlschema }}</lastmod>
+            {% elsif page.date %}
+              <lastmod>{{ page.date | date_to_xmlschema }}</lastmod>
+            {% else %}
+              <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+            {% endif %}
+            {% if page.sitemap.priority %}
+              <priority>{{ page.sitemap.priority }}</priority>
+            {% else %}
+              <priority>0.7</priority>
+            {% endif %}
+          </url>
+        {% endunless %}
+      {% endunless %}
+    {% endif %}
+  {% endfor %}
+  {% for post in site.posts %}
+    {% unless post.published == false %}
+    <url>
+      <loc>{{ site.url }}{{ post.url }}</loc>
+      {% if post.sitemap.lastmod %}
+        <lastmod>{{ post.sitemap.lastmod | date_to_xmlschema }}</lastmod>
+      {% elsif post.date %}
+        <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
+      {% else %}
+        <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+      {% endif %}
+      {% if post.sitemap.priority %}
+        <priority>{{ post.sitemap.priority }}</priority>
+      {% else %}
+        <priority>0.5</priority>
+      {% endif %}
+    </url>
+    {% endunless %}
+  {% endfor %}
+</urlset>

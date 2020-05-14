@@ -1,0 +1,34 @@
+# Site settings
+  # Note: after editing config, you'll need to stop and restart jekyll server for changes to take effect.
+title: Jekyll SEO Boilerplate
+description: "Search-optimized Jekyll static site boilerplate. Includes basic pages and posts layouts, json-ld Schema for WebPage, BlogPosting, a sitemap.xml file, blog feed, and frontmatter fields mapping to on-page metadata head.html markup."
+copyright-name: "Mathson Design, LLC"
+baseurl: ""
+url: "https://virtuacon.mathsondesignco.com"   # with the https protocol
+enforce_ssl: virtuacon.mathsondesignco.com   # without any protocol
+
+social:
+  name: Mathson Design Co.
+  email: scott@mathsondesignco.com
+  links:
+    - https://twitter.com/mathsondesignco
+
+google_tracking_id: UA-xxxx
+
+logo: assets/images/
+favicon: assets/images/
+    
+feed:
+  collections:
+    - posts
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+paginate: 10
+paginate_path: "/blog.html"
+
+plugins: ["jekyll-paginate"]
+
+exclude: ["Gemfile","Gemfile.lock"]

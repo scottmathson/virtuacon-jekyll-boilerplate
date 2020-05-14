@@ -1,0 +1,5 @@
+<nav class="dt w-100 border-box pa4-ns pa3 mb2" role="navigation">
+  {%for page in site.pages%}
+    <a class="v-mid link dim" href="{{ site.baseurl }}/" title="{{page.title}}">{{page.title}}</a>
+  {%endfor%}
+</nav>

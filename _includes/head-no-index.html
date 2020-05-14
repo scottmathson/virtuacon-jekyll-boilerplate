@@ -1,0 +1,79 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>{% if page.metatitle %}{{ page.metatitle }}{% elsif page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}{% unless page.title contains site.title %} - {{ site.title }}{% endunless %}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% if page.metadescription %}
+  <meta name="description" content="{{ page.metadescription }}">
+  {% elsif page.description %}
+  <meta name="description" content="{{ page.description }}">
+  {% else %}
+  <meta name="description" content="{{ site.description }}">
+  {% endif %}
+
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}{{ site.favicon }}">
+  <link rel="icon" type="image/jpg" href="{{ site.baseurl }}{{ site.favicon }}" sizes="32x32">
+  <link rel="icon" type="image/jpg" href="{{ site.baseurl }}{{ site.favicon }}" sizes="16x16">
+
+  <meta name="robots" content="noindex, nofollow">
+  
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{site.url}}{{page.url}}">
+  {% if page.metatitle %}
+  <meta property="og:title" content="{{page.metatitle}} - {{site.title}}">
+  {% elsif page.title %}
+  <meta property="og:title" content="{{page.title}} - {{site.title}}">
+  {% else %}
+  <meta property="og:title" content="{{site.title}}">
+  {% endif %}
+  {% if page.description %}
+  <meta property="og:description" content="{{page.description}}">
+  {% elsif page.metadescription %}
+  <meta property="og:description" content="{{page.metadescription}}">
+  {% else %}
+  <meta property="og:description" content="{{site.description}}">
+  {% endif %}
+  {% if page.img %}
+  <meta property="og:image" content="{{site.url}}/{{page.img}}">
+  {% else %}
+  <meta property="og:image" content="{{site.url}}/{{ site.logo }}">
+  {% endif %}
+  <meta property="og:see_also" content="https://twitter.com/{{site.twitter.username}}">
+
+  <meta property="twitter:card" content="summary">
+  <meta property="twitter:url" content="{{site.url}}{{page.url}}">
+  {% if page.metatitle %}
+  <meta property="twitter:title" content="{{page.metatitle}} - {{site.title}}">
+  {% elsif page.title %}
+  <meta property="twitter:title" content="{{page.title}} - {{site.title}}">
+  {% else %}
+  <meta property="twitter:title" content="{{site.title}}">
+  {% endif %}
+  {% if page.description %}
+  <meta property="og:description" content="{{page.description}}">
+  {% elsif page.metadescription %}
+  <meta property="og:description" content="{{page.metadescription}}">
+  {% else %}
+  <meta property="twitter:description" content="{{site.description}}">
+  {% endif %}
+  {% if page.img %}
+  <meta property="twitter:image" content="{{site.url}}/{{page.img}}">
+  {% else %}
+  <meta property="twitter:image" content="{{site.url}}/{{ site.logo }}">
+  {% endif %}
+  
+  {% include schema/webpage.html %}
+
+  <link type="application/atom+xml" rel="alternate" href="{{site.url}}/feed.xml" title="{{site.title}}">
+  <link rel="canonical" href="{{site.url}}{{ page.url }}">
+
+  <!-- Preloads -->
+  <link rel="preload" href="{{ site.baseurl }}/assets/css/normalize.css" as="style">
+  <link rel="preload" href="{{ site.baseurl }}/assets/css/tachyons.min.css" as="style">
+
+  <!-- Normalize and Tachyons CSS -->
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/normalize.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/tachyons.min.css"/>
+  
+  <script>{% include misc/ga-gtm.txt %}</script>
+</head>

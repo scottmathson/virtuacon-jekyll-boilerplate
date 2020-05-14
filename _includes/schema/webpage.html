@@ -1,0 +1,23 @@
+<script type="application/ld+json">
+  {
+   "@context":"https://schema.org",
+   "@type":"WebPage",
+   "name":"{%if page.metatitle%}{{page.metatitle}}{%else%}{{page.title}}{%endif%}",
+   "description":"{%if page.metadescription%}{{page.metadescription}}{%else%}{{page.description}}{%endif%}",
+   "url":"{{site.url}}{{ page.url }}",
+   "image":"{%if page.image%}{{page.image}}{%else%}{{site.logo}}{%endif%}",
+   "publisher":{
+      "@type":"Organization",
+      "name":"{{site.title}}",
+      "url":"{{site.url}}/",
+      "logo":{
+         "@type":"ImageObject",
+         "url":"{{site.url}}/{{site.logo}}"
+      },
+      "sameAs":[
+      {%for link in site.social.links%}
+         "{{link}}",
+       {%endfor%}
+      ]
+   }
+</script>
