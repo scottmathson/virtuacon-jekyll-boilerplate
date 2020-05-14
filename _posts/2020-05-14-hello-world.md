@@ -4,6 +4,7 @@ title: Hello World
 metatitle: Hello World - Jekyll Blogging Best Practices
 description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 metadescription: "Jekyll hello world blog post utilizing on-page JSON-LD Schema markup. To accompany Jekyll SEO Boilerplate starter repository for presentation by Scott Mathson."
+author: Scott Mathson
 date: "2020-05-14 14:00:00 +0000"
 image: "assets/images/blog/hello-world-image-placeholder.png"
 sitemap:
