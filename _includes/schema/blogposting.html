@@ -5,7 +5,7 @@
    "headline":"{%if page.metatitle%}{{page.metatitle}}{%else%}{{page.title}}{%endif%}",
    "description":"{%if page.metadescription%}{{page.metadescription}}{%else%}{{page.description}}{%endif%}",
    "url":"{{site.url}}{{ page.url }}",
-   "image":"{%if page.image%}{{page.image}}{%else%}{{site.logo}}{%endif%}",
+   "image":"{%if page.image%}{{site.url}}/{{page.image}}{%else%}{{site.logo}}{%endif%}",
    {%if page.sitemap.lastmod%}
    "dateModified":"{{page.sitemap.lastmod}}",
    {%else%}
