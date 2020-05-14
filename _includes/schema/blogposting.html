@@ -13,7 +13,7 @@
    "datePublished":"{{page.date}}",
    "mainEntityOfPage": {
      "@type": "WebPage",
-     "@id": "{{site.url}}{{ page.url }}"
+     "@id": "{{site.url}}{{ page.url }}",
      {%if page.author%}
       "author":{
         "@type":"Person",
@@ -28,7 +28,8 @@
         "logo":{
            "@type":"ImageObject",
            "url":"{{site.url}}/{{site.logo}}"
-      },
-    },
+      }
+    }
    }
+  }
 </script>
