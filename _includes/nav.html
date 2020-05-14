@@ -1,5 +1,7 @@
 <nav class="dt w-100 border-box pa4-ns pa3 mb2" role="navigation">
   {%for page in site.pages%}
-    <a class="v-mid link dim" href="{{ site.baseurl }}/" title="{{page.title}}">{{page.title}}</a>
+    {%unless page.sitemap.exclude == "yes"%}
+      <a class="v-mid dim mr3" href="{{ site.baseurl }}/" title="{{page.title}}">{{page.title}}</a>
+    {%endunless%}
   {%endfor%}
 </nav>
