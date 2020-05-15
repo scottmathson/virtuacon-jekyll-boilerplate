@@ -1,2 +1,2 @@
-Sitemap: https://example.com/sitemap.xml
+Sitemap: https://virtuacon.scottmathson.com/sitemap.xml
 User-agent: *
