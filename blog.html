@@ -22,13 +22,13 @@ sitemap:
       <div class="cf w-100 mb4">
         <div class="fl w-40-ns w-100">
           <a href="{{site.url}}{{post.url}}" title="{{post.title}}" class="link">
-            <img src="{{site.url}}/{{post.image}}" alt="{{post.title}}" class="w-75-ns w-100">
+            <img src="{{site.baseurl}}/{{post.image}}" alt="{{post.title}}" class="w-75-ns w-100">
           </a>
         </div>
         <div class="fl w-60-ns w-100">
           <h3>{{post.title}}</h3>
           <p>{{post.description | truncate: 175}}</p>
-          <a href="{{site.url}}{{post.url}}" title="{{post.title}}" class="link">
+          <a href="{{site.baseurl}}{{post.url}}" title="{{post.title}}" class="link">
             <button class="bg-black-70 pa2 white dim">Read more</button>
           </a>
         </div>

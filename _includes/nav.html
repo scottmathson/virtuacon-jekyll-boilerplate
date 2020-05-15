@@ -1,8 +1,8 @@
 <nav class="dt w-100 border-box pa4-ns pa3 mb2" role="navigation">
   <a class="v-mid dim mr3" href="{{ site.baseurl }}/" title="Jekyll SEO Boilerplate home">Home</a>
-  {%for page in site.pages | reverse%}
+  {%for page in site.pages%}
     {%unless page.navigation.exclude == "yes""%}
-      <a class="v-mid dim mr3" href="{{site.url}}{{page.url}}" title="{{page.title}}">{{page.title}}</a>
+      <a class="v-mid dim mr3" href="{{site.baseurl}}{{page.url}}" title="{{page.title}}">{{page.title}}</a>
     {%endunless%}
   {%endfor%}
 </nav>
