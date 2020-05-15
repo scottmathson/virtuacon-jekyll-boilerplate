@@ -2,6 +2,8 @@
 
 Search-optimized Jekyll static site boilerplate. Includes basic pages and posts layouts, json-ld Schema for WebPage, BlogPosting, a sitemap.xml file, blog feed, and frontmatter fields mapping to on-page metadata head.html markup.
 
+_This repository accompanies a live presentation from VirtuaCon on May 15th, 2020 - video replay coming._
+
 - Simple and customizable components and layouts
 - Quick setup and management via config file
 - Light-weight, performant layouts for pages and posts
@@ -11,6 +13,8 @@ Search-optimized Jekyll static site boilerplate. Includes basic pages and posts 
 - Search engine friendly - optimized metadata, Schema markup, and more
 - Social sharing metadata for Twitter, Facebook, and more
 - Sitemap.xml, XML feed of posts, and 404 Page
+
+![Jekyll boilerplate site Lighthouse score](https://virtuacon.scottmathson.com/assets/images/jekyll-lighthouse-score-live.png)
 
 ---
 
