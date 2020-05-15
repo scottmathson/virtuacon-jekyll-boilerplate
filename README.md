@@ -14,7 +14,7 @@ _This repository accompanies a live presentation from VirtuaCon on May 15th, 202
 - Social sharing metadata for Twitter, Facebook, and more
 - Sitemap.xml, XML feed of posts, and 404 Page
 
-![Jekyll boilerplate site Lighthouse score](https://virtuacon.scottmathson.com/assets/images/jekyll-lighthouse-score-live.png)
+![Jekyll boilerplate site Lighthouse score](https://raw.githubusercontent.com/scottmathson/virtuacon-jekyll-boilerplate/master/assets/images/jekyll-lighthouse-score-live.png)
 
 ---
 
