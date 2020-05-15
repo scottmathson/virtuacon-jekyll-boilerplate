@@ -2,6 +2,11 @@
   # Note: after editing config, you'll need to stop and restart jekyll server for changes to take effect.
 title: Jekyll SEO Boilerplate
 description: "Search-optimized Jekyll static site boilerplate. Includes basic pages and posts layouts, json-ld Schema for WebPage, BlogPosting, a sitemap.xml file, blog feed, and frontmatter fields mapping to on-page metadata head.html markup."
+# Next items map to schema/webpage.html and blogposting.html
+publisher:
+    name: Mathson Design Co.
+    website: https://mathsondesignco.com/
+    logo: https://mathsondesignco.com/img/mathson-design-logo.png
 copyright-name: "Mathson Design, LLC"
 baseurl: ""
 url: "https://virtuacon.mathsondesignco.com"   # with the https protocol
