@@ -8,7 +8,7 @@ author: Scott Mathson
 date: "2020-05-14 14:00:00 +0000"
 image: "assets/images/blog/hello-world-image-placeholder.png"
 sitemap:
-  lastmod: 2020-05-14 14:00:00 +0000
+  lastmod: 2020-05-15 14:00:00 +0000
   priority: 0.8
 ---
 
