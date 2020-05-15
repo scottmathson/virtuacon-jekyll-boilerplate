@@ -9,8 +9,7 @@ publisher:
     logo: https://mathsondesignco.com/img/mathson-design-logo.png
 copyright-name: "Mathson Design, LLC"
 baseurl: ""
-url: "https://virtuacon.mathsondesignco.com"   # with the https protocol
-enforce_ssl: virtuacon.mathsondesignco.com   # without any protocol
+url: "https://example.com"
 
 social:
   name: Mathson Design Co.
