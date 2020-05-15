@@ -20,8 +20,8 @@ social:
 
 google_tracking_id: UA-xxxx
 
-logo: assets/images/
-favicon: assets/images/
+logo: assets/images/jekyll-boilerplate-placeholder-favicon.png
+favicon: assets/images/jekyll-boilerplate-placeholder-favicon.png
     
 feed:
   collections:
