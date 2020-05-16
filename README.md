@@ -2,7 +2,11 @@
 
 Search-optimized Jekyll static site boilerplate. Includes basic pages and posts layouts, json-ld Schema for WebPage, BlogPosting, a sitemap.xml file, blog feed, and frontmatter fields mapping to on-page metadata head.html markup.
 
-_This repository accompanies a live presentation from VirtuaCon on May 15th, 2020 - video replay coming._
+_This repository accompanies a live presentation from VirtuaCon on May 15th, 2020._
+
+Check out the video, other presentation assets, and read the accompanying [blog post](https://scottmathson.com/blog/2020/05/15/seo-on-the-jamstack-virtuacon-presentation/).
+
+[![Watch SEO on the Jamstack by Scott Mathson @ VirtuaCon 2020](https://raw.githubusercontent.com/scottmathson/virtuacon-jekyll-boilerplate/master/assets/images/virtuacon-2020-seo-on-the-jamstack-by-scott-mathson.png)](https://scottmathson.com/blog/2020/05/15/seo-on-the-jamstack-virtuacon-presentation/#video)
 
 - Simple and customizable components and layouts
 - Quick setup and management via config file
